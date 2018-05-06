@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://www.novinfard.com/blog/261-iot-analysis-of-video-baby-monitor-system -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--<base href="http://www.novinfard.com/blog/261-iot-analysis-of-video-baby-monitor-system">--><base href=".">
+	
+	<meta name="keywords" content="Soheil, Novinfard, iOS, objective-c, swift">
+	<meta name="description" content="Soheil Novinfard">
+	<meta name="generator" content="Egolt ™">
+	<title>Soheil Novinfard - iOT analysis of video baby monitor system</title>
+	<link href="http://www.novinfard.com/templates/egtheme4/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<script type="text/javascript" async="" src="./index_files/ga.js"></script><script src="./index_files/jquery.min.js" type="text/javascript"></script>
+	<script src="./index_files/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="./index_files/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="./index_files/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+	</script>
+	</head><body class="inner-page telecom_content article" style="min-height: 450px;"><div style="display:none;">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30193405-1']);
+  _gaq.push(['_setDomainName', 'egolt.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</div>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link type="text/css" rel="stylesheet" href="./index_files/bootstrap-ch.css">
+	<link type="text/css" rel="stylesheet" href="./index_files/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="./index_files/theme.min.css">
+
+
+	<script type="text/javascript" src="./index_files/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./index_files/bootstrap.min(1).js"></script>
+	<script type="text/javascript">
+				var isguest = true;
+				jQuery.noConflict();
+	</script>
+
+
+
+
+<!--[if lt IE 9]>
+<div class="ie8-note alert alert-warning">
+	<div class="container">
+		<div class="media">
+			<div class="icon pull-left fa fa-comment" style="font-size: 50px; height: 50px; line-height: 50px; margin-right: 20px;"></div>
+			<div class="media-body">
+				<strong>Please upgrade your browser</strong>
+				<div>Your browser does not support the new technologies we used.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<![endif]-->
+
+
+	<nav class="nav-site navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-site-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand" href="http://www.novinfard.com/">Soheil Novinfard</a>
+			</div>
+			<div class="collapse navbar-collapse" id="nav-site-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="http://www.novinfard.com/projects">
+							My Projects
+						</a>
+					</li>
+					<li class="dropdown">
+						<a target="_blank" href="http://www.novinfard.com/media/resume.pdf">
+							Resume
+						</a>
+					</li>
+					<li>
+						<a href="http://www.novinfard.com/blog">Blog</a>
+					</li>
+					<li>
+						<a href="http://www.novinfard.com/contact">
+							Contact Me
+						</a>
+					</li>
+									</ul>
+			</div>
+		</div>
+	</nav>
+
+		<div class="inner-page main-inner" style="min-height: 450px;">
+		<section class="container">
+			<div class="block">
+				<!-- Page Title -->
+		<div class="page-header">
+			<h3> Blog </h3>
+		</div>
+					<h2 style="text-align: center;margin-bottom: 30px;">
+			<!--				<a class="noline" href="/--><!--"> -->
+					iOT analysis of video baby monitor system<!--				</a>-->
+					</h2>
+		
+						
+					<p class="createdby">
+													Written by Soheil Novinfard							</p>
+					<div class="single-page-container">
+				<!-- Item Info -->
+		<p class="article-info">
+										<span class="create" style="color: #aaa;"><i class="fa fa-edit"></i> Wednesday, 13 December 2017 </span>
+												<!--
+						-->
+								</p>
+										<!-- Item URLS -->
+																		<!-- Item Content -->
+			<blockquote>
+				<p class="introtxt">
+					
+By the sudden rise of complexity in modern world, people face the shortage of time to monitor all the things in their life. This is of the reasons leads to create many monitoring systems these days. In this area, infants and babies are of great importance where parents have to take care of them very carefully. On the other hand, it is not possible for parents or even babysitters to always stay near baby’s bed. Here, baby monitor systems play their role to help to ease the situation. In this article, we are going to describe video baby monitor in terms of iOT concepts.
+				</p>
+			</blockquote>
+			<div style="font-size: 15px;">
+				
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">For modelling the process, I used the “soft systems methodology” (SSM) [1][2] which can be useful for both general problem solving and change management in problematical and messy situations. The following is the description of our prototype design based on SSM model:</span></p>
+<h2>SSM 1: Defining a problem or application</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">The study targets different problems by its multi-purpose design. First some definitions are defined to avoid ambiguity in later sections.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">The “guardians” term is used to refer to parents, babysitters or any other one who are in charge of taking care of infants and babies. In addition, although the design can be applied to monitoring the wider range of children, we only focus on the “infants” which is used to refer to infants or toddlers who are in the age between new-born to 2 years of age. </span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">The main problems which are tackled in this article are as follows:</span></p>
+<p class="MsoNormal" style="margin-left: .25in;"><span style="font-size: 16.0pt; line-height: 107%;">Scenario 1) Some guardians intend to monitor the infants manually by watching them when they are not in the same place. The problem is that they are in different physical environments and the guardians cannot see infants to track their status. It happens in many situations, for instance, when they work at their workplace and they have got a babysitter for infants, a mother is cooking something for their family, or parents are watching television together at weekends. We named this scenario “manual monitoring”.</span></p>
+<p class="MsoNormal" style="margin-left: .25in;"><span style="font-size: 16.0pt; line-height: 107%;">Scenario 2) The guardians should take care of infants in almost 24 hours of day, because of the sensitive condition of infants and possible dangers around them. For doing this, they have to be informed when infants start crying. We named this scenario “cry monitoring”.</span></p>
+<p class="MsoNormal" style="margin-left: .25in;"><span style="font-size: 16.0pt; line-height: 107%;">Scenario 3) There is a dangerous potential syndrome among infants from one month to one year of age named “Sudden Infant Death Syndrome” [3], also known as SIDS which leads to a lot of death. If guardian can immediately be aware of the issue, there is a possibility to survive the infant, but the problem lies in the fact that this usually occurs when an infant is asleep. Also, if a guardian monitors baby manually, it needs them to be so precise of infant movements which is not always possible. We named this scenario “SIDS monitoring”.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">In our design, the main stakeholders are guardians and infants as we mentioned before.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">Our solution is based on these steps:</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">At first, some sensors are needed to sense the infants’ voice and movement to keep track of their conditions. Thus, a combination of a camera and a microphone forms the main necessary sensors.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">Then in the next stage we need to transmit the data(signal) to both guardian and “analysing server”. First one is used for manual monitoring by guardians and second one is a part of our cry and SIDS monitoring solution. Here, wireless network connected to the Internet helps us to implement the transmission part.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">We called the device which is used to sense and transmit the data as “detector device”.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">In next step, the guardians would get the result from the detector device as live video stream of infant in their smart phones. In addition, if analysing server detects crying of baby without guardians noticing or SIDS, it will notify them by sending a message to their smart phone.</span></p>
+<h2>&nbsp;</h2>
+<h2>SSM2: Express the Problem Situation</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">To having general picture of problem, it is modelled using the below sketch:</span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 16.0pt; line-height: 107%;"><img id="Picture 1" class="img-responsive center-block" src="./index_files/image001.png" alt="../../Downloads/SSM2.pdf" width="300" height="444"></span></p>
+<p class="MsoCaption" style="text-align: center;" align="center">Figure 1 - general picture of problem statement</p>
+<h2>&nbsp;</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">The main use cases for this problem can be shown as below:</span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 16.0pt; line-height: 107%;"><img id="Picture 2" class="img-responsive center-block" src="./index_files/image002.png" alt="../../Downloads/Use-Case.pdf" width="451" height="436"></span></p>
+<p class="MsoCaption" style="text-align: center;" align="center">Figure 2 - main use cases of video baby monitoring</p>
+<h2>&nbsp;</h2>
+<h2>SSM 3: Give the Root Definition</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">In this stage of SSM, root definitions are represented based on different stakeholder viewpoints as follows:</span></p>
+<p class="MsoListParagraph"><span style="font-size: 16.0pt; line-height: 107%; font-family: Symbol;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">Infant world view</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; line-height: 107%; font-family: &#39;Courier New&#39;,serif;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">ioSD (internet of smart devices) on infant detects he/she is crying and notifies the guardian</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; line-height: 107%; font-family: &#39;Courier New&#39;,serif;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">ioSD on infant detects SIDS and notifies the guardian immediately </span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; line-height: 107%; font-family: &#39;Courier New&#39;,serif;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">ioSD on infant transfers the video and audio data (signal) of him to the guardian on remote area when he/she is requesting</span></p>
+<p class="MsoListParagraph"><span style="font-size: 16.0pt; line-height: 107%; font-family: Symbol;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">Guardian world view</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; line-height: 107%; font-family: &#39;Courier New&#39;,serif;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">ioSD on guardian notify him/her from the infant who is crying</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; line-height: 107%; font-family: &#39;Courier New&#39;,serif;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">ioSD on guardian notify him/her from the infant who may have SIDS and need immediate help</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; line-height: 107%; font-family: &#39;Courier New&#39;,serif;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">ioSD on guardian gives live monitoring information of the infant by using received video and audio data (signal)</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">&nbsp;</span></p>
+<h2>SSM 4: Activity / conceptual modelling</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">In SSM4, the essential actions and activities of system are modelled. &nbsp;The following “hierarchical task analysis” [4] graphs present the results of this modelling for the different scenarios:</span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 16.0pt; line-height: 107%;"><img id="Picture 9" class="img-responsive center-block" src="./index_files/image003.png" width="452" height="174"></span></p>
+<p class="MsoCaption" style="text-align: center;" align="center">Figure 3 - Hierarchical task analysis for scenario 1</p>
+<p class="MsoNormal"><span dir="RTL" lang="FA" style="font-size: 16.0pt; line-height: 107%; font-family: &#39;Times New Roman&#39;,serif;">&nbsp;</span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 16.0pt; line-height: 107%;"><img id="Picture 19" class="img-responsive center-block" src="./index_files/image004.png" width="451" height="562"></span></p>
+<p class="MsoCaption" style="text-align: center;" align="center">Figure 4 - Hierarchical task analysis for scenario 2</p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 16.0pt; line-height: 107%;"><img id="Picture 10" class="img-responsive center-block" src="./index_files/image005.png" alt="../../Downloads/Scenario3.pdf" width="451" height="655"></span></p>
+<p class="MsoCaption" style="text-align: center;" align="center">Figure 5 - Hierarchical task analysis for scenario 3</p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">&nbsp;</span></p>
+<h2>Requirements Analysis</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">The wide range of requirements is needed in this design. The main requirements are as follows:</span></p>
+<p class="MsoListParagraph"><span style="font-size: 16.0pt; font-family: Symbol; color: black;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span style="font-size: 16.0pt; color: black;">detector device</span></i><span style="font-size: 16.0pt; color: black;"> with below components</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">a night vision video camera (2.1 in scenario 1/ 1.1 in scenario 2,3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">a microphone (2.1 in scenario 1/ 1.1 in scenario 2,3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">wireless network component with Internet connectivity (2.2 in scenario 1 / 2.2 in scenario 2,3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">a system board like Samsung Artik 10 Board</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">power adapter</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">&nbsp;</span></p>
+<p class="MsoListParagraph"><span style="font-size: 16.0pt; font-family: Symbol; color: black;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span style="font-size: 16.0pt; color: black;">smart mobile phone</span></i><span style="font-size: 16.0pt; color: black;"> with below components</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">a display (2.4 in scenario 1 / 2.2 in scenario 2,3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">a speaker (2.4, 2.5 in scenario 1 / 2.2 in scenario 2,3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">wireless network component (2.3 in scenario 1 / 2.2.1 in scenario 2,3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">power adapter / sufficient battery for live video streaming</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">&nbsp;</span></p>
+<p class="MsoListParagraph"><span style="font-size: 16.0pt; font-family: Symbol; color: black;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span style="font-size: 16.0pt; color: black;">analysing server</span></i><span style="font-size: 16.0pt; color: black;"> with below components</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">Internet-based SMS service and related API for sending text messages (2.2.2 in scenario 3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">Internet-based voice call service and related API, e.g. Twilio (2.2.3 in scenario 3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">wireless network component (2.2,2.3 in scenario 1 / 2.2 in scenario 2,3)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">power adapter</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">&nbsp;</span></p>
+<p class="MsoListParagraph"><span style="font-size: 16.0pt; font-family: Symbol; color: black;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span style="font-size: 16.0pt; color: black;">monitor mobile application</span></i><span style="font-size: 16.0pt; color: black;"> with below requirements</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">access to background threads</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">access to network connectivity</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">minimum 10 to 20 MB storages for application itself (based on software implementation)</span></p>
+<p class="MsoListParagraph" style="margin-left: 1.0in;"><span style="font-size: 16.0pt; font-family: &#39;Courier New&#39;,serif; color: black;">o<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp; </span></span><span style="font-size: 16.0pt; color: black;">minimum 10 MB storages for live video buffering (2.3 in scenario 1)</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">In terms of functional requirements, the system should keep track of infant state accurately and run for long periods of turn. It is necessary that the system runs in real-time with maximum 30 seconds latency. The system should be able to send notifications properly, especially in urgent situations such as SIDS monitoring. </span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">Generally speaking, the system must be easy to use and reliable. It should work with low-speed Internet connections as well. In addition, a secure connection algorithm for live video streaming, SRTP [5] for instance, is required as it is a concerning issue among baby monitoring systems.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">&nbsp;</span></p>
+<p class="MsoNormal" style="line-height: 11.75pt;"><span style="color: black;">&nbsp;</span></p>
+<h2>SSM 5: Feasibility: comparison of model &amp; real world</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">We can use mobile phone instead of detector device, but as it is not designed for long-term usage, we lose a lot of energy and the its durability is considerably shorter. In addition, most mobile phones excluding pioneer models has not enough sensitivity level, especially for SIDS monitoring. It is not so expensive too, because we just have to implement two sensors including microphone and camera with networking component.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">On the other hand, we did not build special device to show the result of monitoring tasks. Instead, we used ordinary smart phone due to the fact that it has all necessary components needed for this purpose and suits all the requirements. Whenever guardian wants to do manual monitoring can open the app and watch the infant using the wireless connectivity and Internet. In case of SIDS and cry monitoring, only a background thread of mobile phone and internet connection are sufficient to fulfil our needs.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">We added a video camera to our baby monitoring solution which is not very popular in existing solutions. By adding this sensor, we have increased the cost of product a little, but a lot of functionalities and improvements performed by this new component, including SIDS detection, one of dangerous common syndromes among infants in the new century where it is not sensible to have only one-purpose product for this issue. Video monitoring is of great importance for parents commuting to their workplace as well, as they can monitor their infant while a babysitter is at home. The camera sensor improves the cry monitoring significantly comparing to microphone-only design.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; color: black;">In the design of detector device, the power adapter is chosen rather than battery. It is because we need this device for a long period of time, so battery is not good option. It also decreases the final cost of the product. However, using power adapter reduces the movability of device, but this factor is not so important here.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">&nbsp;</span></p>
+<h2>Analysis of design issues and design options</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">We discussed some aspects of design options in SSM5. Here we explain more detail about. </span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">First of all, there are many similar projects which are currently used for baby monitor, some of them are using a microphone or a camera or both of them as their main sensors like “<a href="https://www.amazon.co.uk/GHB-Monitor-Camera-Wireless-Vision/dp/B01N6KHIFQ/ref=sr_1_1_sspa?ie=UTF8&amp;qid=1513141850&amp;sr=8-1-spons&amp;keywords=baby+monitor&amp;psc=1">GHB Video Baby Monitor</a>" and “<a href="https://www.amazon.co.uk/BT-Digital-Audio-Baby-Monitor/dp/B01MR3CP9L/ref=sr_1_3_a_it?ie=UTF8&amp;qid=1513141850&amp;sr=8-3&amp;keywords=baby+monitor">BT Digital Audio Baby Monitor 400</a>” as popular commercial products among them. But they are some main differences here to be discussed which makes this design feature comparing with competitors:</span></p>
+<p class="MsoListParagraph"><span style="font-size: 16.0pt; line-height: 107%; font-family: Symbol;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">In our design, we used wireless network with Internet connectivity rather than Bluetooth used by most products. This feature enables us to use it as remote monitoring system and it is applicable for houses with big and medium sizes as well places where Bluetooth signal does not have enough strength to transmit the data.</span></p>
+<p class="MsoListParagraph"><span style="font-size: 16.0pt; line-height: 107%; font-family: Symbol;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">The other important difference lies with the fact that almost none of the similar products have SIDS monitoring and it is something new which guardians who care more about their infant health status or the parents that being notified of probable SIDS problem in their infant.</span></p>
+<p class="MsoListParagraph"><span style="font-size: 18.0pt; line-height: 107%; font-family: Symbol;">·<span style="font: 7.0pt &#39;Times New Roman&#39;;">&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size: 16.0pt; line-height: 107%;">The two important parts of the design, “analysing server” and “monitoring mobile application” give this system automated monitoring feature including SIDS monitoring and cry monitoring. Above all, this design pattern allows flexibility and extensibility without major changes in hardware. For instance, suppose that a new disease spreads among infants. In this case, there is a possibility that by finding its features and train our detection model based on this at analysing server, the system notifies the guardians about the new disease as well.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">Now, let us look at some design issues and constraints. One of the constraints of system is related to latency of processing video frames. Sometimes it can take more than 1 minute for automated detection at server based on survey as processing of 30 second video may take 90 seconds by regular machine learning algorithms [6]. We can use different approaches to solve this issue. Our suggestion is to use spark big data processing model to speed up the processing time and take more efficient parallel algorithm in this area. </span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">Another limitation is the number of concurrent requests at server. Because our design is completely real-time and the sensors information is always sending to analysing server, the system is not extendable and by having limited number of users (guardians) our resources will finish. A solution to this problem could be designing a pre-process stage at detector device before data transmission to server.</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">Our design is shown at the following diagram:</span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><img id="Picture 3" class="img-responsive center-block" src="./index_files/image006.png" alt="../../Downloads/Final-Solution.pdf" width="382" height="394" border="0"></p>
+<p class="MsoCaption" style="text-align: center;" align="center">Figure 6 - a video baby monitoring solution</p>
+<span style="font-size: 11.0pt; line-height: 107%; font-family: &#39;Calibri&#39;,sans-serif;"><br style="page-break-before: always;" clear="all"> </span>
+<p class="MsoNormal" style="text-align: center;" align="center"><b><span style="font-size: 18.0pt; line-height: 107%; font-family: &#39;Times New Roman&#39;,serif;">&nbsp;</span></b></p>
+<h2>References:</h2>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">[1] P Checkland, J Poulter;&nbsp;Systems&nbsp;approaches to managing change: A Practical Guide pp 191-242, 2010 - Springer</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">[2] Wilson B., Soft Systems Methodology Conceptual Model Building and its Contribution, 2001 - Wiley ISBN0-471-89489-3</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">[3] RY Moon, RSC Horne, FR Hauck; Sudden infant death syndrome - The Lancet, 2007 – Elsevier</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">[4] NA Stanton; Hierarchical task analysis: Developments, applications, and extensions; Applied ergonomics, 2006 – Elsevier</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">[5] P. Iyyanar, M. Chitra, and P. Sabarinath; Effective and Secure Scheme for Video Streaming Using SRTP; 2012, International Journal of Machine Learning and Computing, Vol. 2, No. 6</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">[6] R Pereira, M Azambuja, K Breitman;</span> <span style="font-size: 16.0pt; line-height: 107%;">An architecture for distributed high performance video processing in the cloud, 2010; IEEE 3rd International Conference on Cloud Computing</span></p>
+<p class="MsoNormal"><span style="font-size: 16.0pt; line-height: 107%;">&nbsp;</span></p>
+</div>			</div>
+			<!-- Pagination -->
+															<!-- Item Nav -->
+		 </div>
+
+</section></div>
+		
+
+	
+
+	<div class="crumb">
+		<div class="container" style="padding: 0;">
+			
+<ul itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+			<li class="active">
+			You are here: &nbsp;
+		</li>
+	
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a itemprop="item" href="http://www.novinfard.com/" class="pathway">
+						<span itemprop="name">
+							Home						</span>
+					</a>
+				
+								<meta itemprop="position" content="1">
+			</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a itemprop="item" href="http://www.novinfard.com/blog" class="pathway">
+						<span itemprop="name">
+							Blog						</span>
+					</a>
+				
+								<meta itemprop="position" content="2">
+			</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="active">
+				<span itemprop="name">
+					iOT analysis of video baby monitor system				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+
+		</div>
+	</div>
+
+	<footer class="footer text-center">
+		<div class="container">
+			<div class="footer-menu clearfix">
+				<ul class="nav inline">
+					<li>
+						<a href="http://www.linkedin.com/in/novinfard">
+							<i class="fa fa-linkedin"></i>
+							<span class="visible-phone">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/novinfard">
+							<i class="fa fa-github"></i>
+							<span class="visible-phone">Github</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://stackoverflow.com/users/3477974/soheil-novinfard">
+							<i class="fa fa-stack-overflow"></i>
+							<span class="visible-phone">Stack Overflow</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/novinfard/">
+							<i class="fa fa-instagram"></i>
+							<span class="visible-phone">Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/novinfard">
+							<i class="fa fa-twitter"></i>
+							<span class="visible-phone">Twitter</span>
+						</a>
+					</li>
+									</ul>
+								<hr>
+								<div class="footer-copyright small">
+					Copyright © 2012 - 2018 Soheil Novinfard . All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+<script type="text/javascript">
+	jQuery(function () {
+
+		jQuery('#myModalMessage').modal('show');
+		jQuery('[data-toggle="tooltip"]').tooltip();
+
+		jQuery('div.pagination > ul').addClass('pagination');
+		jQuery('div.pagination > ul li').has('span').addClass('active');
+		jQuery('div.pagination > ul li.pagination-start').has('span').attr('class','disabled');
+		jQuery('div.pagination > ul li.pagination-prev').has('span').attr('class','disabled');
+		jQuery('div.pagination > ul li.pagination-next').has('span').attr('class','disabled');
+		jQuery('div.pagination > ul li.pagination-end').has('span').attr('class','disabled');
+
+
+		// Default Tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			jQuery('.nav-prds a[href=#'+url.split('#')[1]+']').tab('show') ;
+		}
+// With HTML5 history API, we can easily prevent scrolling!
+		jQuery('.nav-prds a').on('shown.bs.tab', function (e) {
+			if(history.pushState) {
+				history.pushState(null, null, e.target.hash);
+			} else {
+				window.location.hash = e.target.hash; //Polyfill for old browsers
+			}
+		});
+
+				jQuery("#jform_email2").val(jQuery("#jform_email1").val());
+		jQuery("#jform_email1").keyup(function(){
+			jQuery("#jform_email2").val(this.value);
+		});
+		jQuery("#jform_password2").val(jQuery("#jform_password1").val());
+		jQuery("#jform_password1").keyup(function(){
+			jQuery("#jform_password2").val(this.value);
+		});
+		
+
+		jQuery(document).ready(function(){
+			resizeDiv();
+		});
+		window.onresize = function(event) {
+			resizeDiv();
+		};
+		function resizeDiv() {
+			vpw = jQuery(window).width();
+			vph = jQuery(window).height();
+			vph2 = vph - jQuery('.nav-site').height() - jQuery('.footer').height() - 100;
+			jQuery('.top-cover').css({'min-height': vph});
+			jQuery('.inner-page').css({'min-height': vph2});
+		}
+
+		jQuery(window).scroll(function () {
+			var windowScroll = jQuery(this).scrollTop();
+			var mapScroll = jQuery('.world_map').scrollTop() +400;
+
+			if (windowScroll > mapScroll) {
+				jQuery('.world_map').addClass("inview");
+			}
+		});
+
+		// financial
+		jQuery('.financial input').addClass('form-control');
+		jQuery('.financial textarea').addClass('form-control');
+		jQuery('.financial select').addClass('form-control');
+		jQuery('.financial form').addClass('form-max-500');
+		jQuery('.financial .btn').addClass('btn-default');
+
+//		jQuery(document).ready(function($){
+
+		// first start
+		jQuery('.tab-contents').slideUp();
+		jQuery('#tab1').slideDown(200);
+
+		// procedure
+		jQuery('.opentab').click(function(event){
+			jQuery('.opentab').removeClass('btn-primary')
+			jQuery(this).addClass('btn-primary')
+			event.preventDefault();
+			var tab_id = jQuery(this).attr('id');
+			jQuery('.tab-contents').slideUp();
+			jQuery('#tab'+tab_id).slideDown(200);
+		});
+//		});
+	});
+</script>
+
+</body></html>

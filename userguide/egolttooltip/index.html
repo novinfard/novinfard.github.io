@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://www.novinfard.com/userguide/egolttooltip -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--<base href="http://www.novinfard.com/userguide/egolttooltip">--><base href=".">
+	
+	<meta name="keywords" content="Soheil, Novinfard, iOS, objective-c, swift">
+	<meta name="description" content="Soheil Novinfard">
+	<meta name="generator" content="Egolt ™">
+	<title>Soheil Novinfard - Egolt Tooltip User Guide</title>
+	<link href="http://www.novinfard.com/templates/egtheme4/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<script type="text/javascript" async="" src="./index_files/ga.js"></script><script src="./index_files/jquery.min.js" type="text/javascript"></script>
+	<script src="./index_files/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="./index_files/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="./index_files/caption.js" type="text/javascript"></script>
+	<script src="./index_files/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+	</script>
+	</head><body class="inner-page telecom_content article" style="min-height: 450px;"><div style="display:none;">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30193405-1']);
+  _gaq.push(['_setDomainName', 'egolt.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</div>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link type="text/css" rel="stylesheet" href="./index_files/bootstrap-ch.css">
+	<link type="text/css" rel="stylesheet" href="./index_files/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="./index_files/theme.min.css">
+
+
+	<script type="text/javascript" src="./index_files/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./index_files/bootstrap.min(1).js"></script>
+	<script type="text/javascript">
+				var isguest = true;
+				jQuery.noConflict();
+	</script>
+
+
+
+
+<!--[if lt IE 9]>
+<div class="ie8-note alert alert-warning">
+	<div class="container">
+		<div class="media">
+			<div class="icon pull-left fa fa-comment" style="font-size: 50px; height: 50px; line-height: 50px; margin-right: 20px;"></div>
+			<div class="media-body">
+				<strong>Please upgrade your browser</strong>
+				<div>Your browser does not support the new technologies we used.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<![endif]-->
+
+
+	<nav class="nav-site navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-site-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand" href="http://www.novinfard.com/">Soheil Novinfard</a>
+			</div>
+			<div class="collapse navbar-collapse" id="nav-site-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="http://www.novinfard.com/projects">
+							My Projects
+						</a>
+					</li>
+					<li class="dropdown">
+						<a target="_blank" href="http://www.novinfard.com/media/resume.pdf">
+							Resume
+						</a>
+					</li>
+					<li>
+						<a href="http://www.novinfard.com/blog">Blog</a>
+					</li>
+					<li>
+						<a href="http://www.novinfard.com/contact">
+							Contact Me
+						</a>
+					</li>
+									</ul>
+			</div>
+		</div>
+	</nav>
+
+		<div class="inner-page main-inner" style="min-height: 450px;">
+		<section class="container">
+			<h2 class="single-page-header">
+		Egolt Tooltip User Guide	</h2>
+
+<div class="item-page single-page-container" itemscope="" itemtype="http://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+	
+		
+							
+	
+	
+		
+													<div itemprop="articleBody">
+			<div class="block sml">
+<h2>Index</h2>
+<ol class="index">
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#1">Configuration to Egolt Tooltip</a>
+<ol>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#1.1">Requirements</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#1.2">Installation</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#1.3">Enable the plugin</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#1.5">Uninstallation</a></li>
+</ol>
+</li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#2">Start Using Egolt Tooltip</a>
+<ol>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#2.1">Simple syntax</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#2.2">Advanced options</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#2.3">Insert image</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#2.4">Insert snapshoot</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#2.5">Insert HTML code</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#2.6">As an HTML tooltip</a></li>
+</ol>
+</li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#3">Plugin General Options</a>
+<ol>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#3.1">Basic</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#3.2">Style</a></li>
+<li><a href="http://www.novinfard.com/userguide/egolttooltip#3.3">Pages</a></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="block sml">
+<h2 class="indexed"><a name="1"></a>1) Configuration to Egolt Tooltip</h2>
+<p>Egolt Tooltip is a user-friendly product and you can setup it very easily in just less than a 1 minute! This section will help you to install it correctly.</p>
+<h3 class="imp impsml indexed"><a name="1.1"></a>1.1) Requirements</h3>
+<p><strong>Egolt Tooltip</strong> will only work correctly if your setup meets these requirements:</p>
+<ul>
+<li>Up-to-date version of compatible softwares:
+<ul>
+<li>Joomla! 2.5</li>
+</ul>
+</li>
+<li><strong>PHP 5.3+</strong></li>
+<li><strong>MySQL 5+</strong></li>
+</ul>
+<p><strong>Important:</strong> We can only provide support for setups that:</p>
+<ul>
+<li>meet the above requirements;</li>
+<li><strong>do not</strong> have 3rd party files or software core files which have been altered in any way.</li>
+</ul>
+<h3 class="imp impsml indexed"><a name="1.2"></a>1.2) Installation</h3>
+<p>You can install <strong>Egolt Tooltip</strong> by using the Joomla! core extension manager available in the Joomla! Administrator Control Panel.</p>
+<p>Note: When updating Egolt Tooltip, you do not need to uninstall it first. The package will update all the files automatically.</p>
+<p>Keep in mind that when you update to a major new version (or uninstall first), you might loose some configuration settings.</p>
+<p>To install via the Joomla! Extension Manager, just follow these steps (based on Joomla 2.5 setup):</p>
+<ol>
+<li>Download the extension zip.</li>
+<li>Log into your Joomla administrator</li>
+<li>In the menu, choose: <em>Extensions &gt;&gt; Extension Manager</em></li>
+<li>Under <em>'Upload Package File'</em> select the extension zip.</li>
+<li>Click on <em>'Upload &amp; Install'</em></li>
+</ol>
+<img class="img-polaroid" src="./index_files/installer.png" alt="Joomla! Installer" width="650" height="270" border="0">
+<p>If you have problems installing Egolt Tooltip, please try the manual installation process as described here: <a href="http://docs.joomla.org/Installing_an_extension" target="_blank">docs.joomla.org/Installing_an_extension</a></p>
+<h3 class="imp impsml indexed"><a name="1.3"></a>1.3) Enable the plugin</h3>
+<p>Go to "Extensions" menu in Joomla! administration panel,then "Plugin Manager" and following that "System - Egolt Tooltip". Then enable it.</p>
+<p style="text-align: center;"><img class="img-polaroid" src="./index_files/enable_plugin.png" alt="" border="0"></p>
+<h3 class="imp impsml indexed"><a name="1.4"></a>1.4) Uninstallation</h3>
+<p>You can uninstall <strong>Egolt Tooltip</strong> by using the Joomla! extension manager available in the Joomla! Administrator Control Panel.</p>
+<p style="text-align: center;"><img class="img-polaroid" src="./index_files/uninstall.png" alt="" border="0"></p>
+<p>For uninstall Egolt Tooltip just uninstall <strong>Egolt Tooltip (Package)</strong>. Then all extensions related to the product will be uninstalled automatically.</p>
+<p>Notice that Egolt Update will not be uninstalled over the uninstallation process described above. If you are sure that no other Egolt products are running in your site, you can delete Egolt Update plugin.</p>
+</div>
+<div class="block sml">
+<h2 class="indexed"><a name="2"></a>2) Start Using Egolt Tooltip</h2>
+<p>Using Egolt Tooltip is a very easy. Just see the follow sections and examples.</p>
+<h3 class="imp impsml indexed"><a name="2.1"></a>2.1) Simple syntax</h3>
+<p>Go to edit one of your Joomla! website contents (or everwhere in Joomla! which there is an editor or textarea). Add the below syntax where you need to add the tooltip:</p>
+<pre>{egtip tip="Hello Tooltip!" } My Text {/egtip}</pre>
+<h3 class="imp impsml indexed"><a name="2.2"></a>2.2) Advanced options</h3>
+<p>Besides the simple syntax of Egolt Tooltip you can user various options to costumize the tooltip and make it suitable for different situations:</p>
+<pre>{egtip tip="Hello Tooltip!" position="right" animation="swing" delay="300" } Advanced options {/egtip}</pre>
+<p>By default and wihtout adding them in the syntax, these options inherited from the Egolt Tooltip Plugin parameters. The list of these advanced options is here:</p>
+<table class="table table-hover table-bordered">
+<thead>
+<tr class="success" style="background-color: #efefef;">
+<th width="150">Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>animation</strong> <br> [fade, grow, swing, slide, fall]</td>
+<td>Determines how the tooltip will animate in and out.</td>
+</tr>
+<tr>
+<td><strong>speed</strong></td>
+<td>The speed of the animation.</td>
+</tr>
+<tr>
+<td><strong>delay</strong></td>
+<td>How long it takes (in milliseconds) for the tooltip to start animating in.</td>
+</tr>
+<tr>
+<td><strong>arrow</strong><br> [0, 1]</td>
+<td>Adds the 'speech bubble arrow' to the tooltip.</td>
+</tr>
+<tr>
+<td><strong>maxwidth</strong></td>
+<td>The max width for the tooltip. If the tooltip ends up being smaller than the set max width, the tooltip's width will be set automatically</td>
+</tr>
+<tr>
+<td><strong>position</strong><br> [top, top-right, top-left, bottom, bottom-right, bottom-left, right, left]</td>
+<td>The position of the tooltip.</td>
+</tr>
+<tr>
+<td><strong>offsetx</strong></td>
+<td>Offsets the tooltip (in pixels) farther left/right from the origin.</td>
+</tr>
+<tr>
+<td><strong>offsety</strong></td>
+<td>Offsets the tooltip (in pixels) farther up/down from the origin.</td>
+</tr>
+<tr>
+<td><strong>trigger</strong><br> [hover, click]</td>
+<td>How tooltips should be activated and closed.</td>
+</tr>
+<tr>
+<td><strong>type</strong><br> [image, snap]</td>
+<td>Specify the special modes. "image" for setting images and "snap" for inserting snapshots on the tooltips.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="imp impsml indexed"><a name="2.3"></a>2.3) Insert image</h3>
+<p>To show an image in the Tooltip, use the syntax in the below form:</p>
+<pre>{egtip tip="http://www.egolt.com/images/logo.png" type="image" } Image in Tooltip {/egtip}</pre>
+<h3 class="imp impsml indexed"><a name="2.4"></a>2.4) Insert snapshoot</h3>
+<p>To show an snapshot of a website in the Tooltip, use the syntax in the below form:</p>
+<pre>{egtip tip="http://www.egolt.com" type="snap" } Image in Tooltip {/egtip}</pre>
+<h3 class="imp impsml indexed"><a name="2.5"></a>2.5) Insert HTML code</h3>
+<p>To show an HTML block of code in the Tooltip, use the syntax in the below form:</p>
+<pre>{egtip tip="&lt;strong&gt;HTML&lt;/strong&gt; &lt;span style='color:orange;' &gt;code&lt;/span&gt; is here" } HTML in Tooltip {/egtip}</pre>
+<p><br> <strong>WARNING:</strong> You must use ( ' ) instead of ( " ) in the HTML tooltip content(tip).</p>
+<h3 class="imp impsml indexed"><a name="2.6"></a>2.6) As an HTML tooltip</h3>
+<p>You can enable an HTML tooltip based on the plugin configurations besides the Joomla! tooltip too. To do this just go to the Egolt Tooltip plugin and set the "HTML Tooltip" option. After that the HTML syntax is in the form below:<br> <strong>On class</strong></p>
+<pre>&lt;a title="Tooltip is here!" class="egtip" &gt; HTML Link wiht Tooltip &lt;/a&gt;</pre>
+<p><strong>On Title</strong></p>
+<pre>&lt;a title="Tooltip is here!" &gt; HTML Link wiht Tooltip &lt;/a&gt;</pre>
+</div>
+<div class="block sml">
+<h2 class="indexed"><a name="3"></a>3) Plugin General Options</h2>
+<p>There are 3 types of options which you can change them in the Egolt Tooltip plugin, Including basic, style and pages options.</p>
+<p style="text-align: center;"><img class="img-polaroid" src="./index_files/general-op1.png" alt="" border="0"></p>
+<h3 class="imp impsml indexed"><a name="3.1"></a>3.1) Basic</h3>
+Most of the basic options are availabe in using tips individually in the editor. However some of them are just defined in the plugin general options and you must change them in this area.
+<table class="table table-hover table-bordered">
+<thead>
+<tr class="success" style="background-color: #efefef;">
+<th width="150">Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Animation</strong> <br> [fade, grow, swing, slide, fall]</td>
+<td>Determines how the tooltip will animate in and out. In IE9 and 8, all animations default to a JavaScript generated, fade animation.</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>The speed of the animation.</td>
+</tr>
+<tr>
+<td><strong>Delay</strong></td>
+<td>How long it takes (in milliseconds) for the tooltip to start animating in.</td>
+</tr>
+<tr>
+<td><strong>Timer</strong></td>
+<td>How long the tooltip should be allowed to live before closing.</td>
+</tr>
+<tr>
+<td><strong>Update animation</strong></td>
+<td>If a tooltip is open while its content is updated, play a subtle animation when the content changes.</td>
+</tr>
+<tr>
+<td><strong>Position</strong><br> [top, top-right, top-left, bottom, bottom-right, bottom-left, right, left]</td>
+<td>The position of the tooltip.</td>
+</tr>
+<tr>
+<td><strong>Offset X</strong></td>
+<td>Offsets the tooltip (in pixels) farther left/right from the origin.</td>
+</tr>
+<tr>
+<td><strong>Offset Y</strong></td>
+<td>Offsets the tooltip (in pixels) farther up/down from the origin.</td>
+</tr>
+<tr>
+<td><strong>Trigger</strong><br> [hover, click]</td>
+<td>How tooltips should be activated and closed.</td>
+</tr>
+<tr>
+<td><strong>Interactive</strong><br> [Yes, No]</td>
+<td>Create a delay that allows users to interact with the tooltip. The tooltip will close after the user hovers off the tooltip or taps off of it.</td>
+</tr>
+<tr>
+<td><strong>Interactive tolerance</strong></td>
+<td>If the tooltip is interactive and activated by a hover event, set the amount of time (milliseconds) allowed for a user to hover off of the tooltip activator (origin) on to the tooltip itself - keeping the tooltip from closing.</td>
+</tr>
+<tr>
+<td><strong>Interactive Auto Close</strong><br> [Yes, No]</td>
+<td>If the tooltip is interactive and activated by a hover event, set whether the tooltip should automatically close once the mouse leaves.</td>
+</tr>
+<tr>
+<td><strong>Touch devices</strong><br> [Yes, No]</td>
+<td>If YES, the tooltip will run on touch devices too (tablets, phones, etc).</td>
+</tr>
+<tr>
+<td><strong>HTML Tooltip</strong><br> [On title, On class, No]</td>
+<td>Select if you want to enable an HTML tooltip based on the plugin configurations besides the Joomla! tooltip too. 'On class' means the tooltip will occure on any HTML elements in which they have the 'egtip' class. 'On title' means it is enabled for any HTML elements in which they have the 'title' attribute. If you need the tooltip to be used just on the Joomla! cases you added, select 'No' option.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="imp impsml indexed"><a name="3.2"></a>3.2) Style</h3>
+<p>Themes and styles of the Tooltip could be set by options in this area.</p>
+<table class="table table-hover table-bordered">
+<thead>
+<tr class="success" style="background-color: #efefef;">
+<th width="150">Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Theme</strong></td>
+<td>You can set the theme used for the tooltip.</td>
+</tr>
+<tr>
+<td><strong>Arrow</strong><br> [Yes, No]</td>
+<td>Adds the 'speech bubble arrow' to the tooltip.</td>
+</tr>
+<tr>
+<td><strong>Arrow color</strong></td>
+<td>A specific color for the 'speech bubble arrow'. If this is empty, it will inherit the tooltip's background color.</td>
+</tr>
+<tr>
+<td><strong>Fixed width</strong></td>
+<td>A fixed width for the tooltip. The tooltip will always be a consistent width - no matter the content size.</td>
+</tr>
+<tr>
+<td><strong>Max Width</strong></td>
+<td>The max width for the tooltip. If the tooltip ends up being smaller than the set max width, the tooltip's width will be set automatically</td>
+</tr>
+</tbody>
+</table>
+<h3 class="imp impsml indexed"><a name="3.3"></a>3.3) Pages</h3>
+<p>Availability of the tooltip in Joomla! pages could be configured by the options in this area.</p>
+<table class="table table-hover table-bordered">
+<thead>
+<tr class="success" style="background-color: #efefef;">
+<th width="150">Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enabled pages</strong><br> [All pages, Selected target, Unselected target]</td>
+<td>Type of including or not inclung Joomla! pages.</td>
+</tr>
+<tr>
+<td><strong>Target Pages</strong></td>
+<td>The target pages (selected target or unselected target based on the previous option)</td>
+</tr>
+</tbody>
+</table>
+</div> 		</div>
+
+		
+									</div>
+		</section>
+
+	</div>
+
+	<div class="crumb">
+		<div class="container" style="padding: 0;">
+			
+<ul itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+			<li class="active">
+			You are here: &nbsp;
+		</li>
+	
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a itemprop="item" href="http://www.novinfard.com/" class="pathway">
+						<span itemprop="name">
+							Home						</span>
+					</a>
+				
+								<meta itemprop="position" content="1">
+			</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a itemprop="item" href="http://www.novinfard.com/userguide" class="pathway">
+						<span itemprop="name">
+							User Guide						</span>
+					</a>
+				
+								<meta itemprop="position" content="2">
+			</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="active">
+				<span itemprop="name">
+					Egolt Tooltip User Guide				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+
+		</div>
+	</div>
+
+	<footer class="footer text-center">
+		<div class="container">
+			<div class="footer-menu clearfix">
+				<ul class="nav inline">
+					<li>
+						<a href="http://www.linkedin.com/in/novinfard">
+							<i class="fa fa-linkedin"></i>
+							<span class="visible-phone">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/novinfard">
+							<i class="fa fa-github"></i>
+							<span class="visible-phone">Github</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://stackoverflow.com/users/3477974/soheil-novinfard">
+							<i class="fa fa-stack-overflow"></i>
+							<span class="visible-phone">Stack Overflow</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/novinfard/">
+							<i class="fa fa-instagram"></i>
+							<span class="visible-phone">Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/novinfard">
+							<i class="fa fa-twitter"></i>
+							<span class="visible-phone">Twitter</span>
+						</a>
+					</li>
+									</ul>
+								<hr>
+								<div class="footer-copyright small">
+					Copyright © 2012 - 2018 Soheil Novinfard . All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+<script type="text/javascript">
+	jQuery(function () {
+
+		jQuery('#myModalMessage').modal('show');
+		jQuery('[data-toggle="tooltip"]').tooltip();
+
+		jQuery('div.pagination > ul').addClass('pagination');
+		jQuery('div.pagination > ul li').has('span').addClass('active');
+		jQuery('div.pagination > ul li.pagination-start').has('span').attr('class','disabled');
+		jQuery('div.pagination > ul li.pagination-prev').has('span').attr('class','disabled');
+		jQuery('div.pagination > ul li.pagination-next').has('span').attr('class','disabled');
+		jQuery('div.pagination > ul li.pagination-end').has('span').attr('class','disabled');
+
+
+		// Default Tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			jQuery('.nav-prds a[href=#'+url.split('#')[1]+']').tab('show') ;
+		}
+// With HTML5 history API, we can easily prevent scrolling!
+		jQuery('.nav-prds a').on('shown.bs.tab', function (e) {
+			if(history.pushState) {
+				history.pushState(null, null, e.target.hash);
+			} else {
+				window.location.hash = e.target.hash; //Polyfill for old browsers
+			}
+		});
+
+				jQuery("#jform_email2").val(jQuery("#jform_email1").val());
+		jQuery("#jform_email1").keyup(function(){
+			jQuery("#jform_email2").val(this.value);
+		});
+		jQuery("#jform_password2").val(jQuery("#jform_password1").val());
+		jQuery("#jform_password1").keyup(function(){
+			jQuery("#jform_password2").val(this.value);
+		});
+		
+
+		jQuery(document).ready(function(){
+			resizeDiv();
+		});
+		window.onresize = function(event) {
+			resizeDiv();
+		};
+		function resizeDiv() {
+			vpw = jQuery(window).width();
+			vph = jQuery(window).height();
+			vph2 = vph - jQuery('.nav-site').height() - jQuery('.footer').height() - 100;
+			jQuery('.top-cover').css({'min-height': vph});
+			jQuery('.inner-page').css({'min-height': vph2});
+		}
+
+		jQuery(window).scroll(function () {
+			var windowScroll = jQuery(this).scrollTop();
+			var mapScroll = jQuery('.world_map').scrollTop() +400;
+
+			if (windowScroll > mapScroll) {
+				jQuery('.world_map').addClass("inview");
+			}
+		});
+
+		// financial
+		jQuery('.financial input').addClass('form-control');
+		jQuery('.financial textarea').addClass('form-control');
+		jQuery('.financial select').addClass('form-control');
+		jQuery('.financial form').addClass('form-max-500');
+		jQuery('.financial .btn').addClass('btn-default');
+
+//		jQuery(document).ready(function($){
+
+		// first start
+		jQuery('.tab-contents').slideUp();
+		jQuery('#tab1').slideDown(200);
+
+		// procedure
+		jQuery('.opentab').click(function(event){
+			jQuery('.opentab').removeClass('btn-primary')
+			jQuery(this).addClass('btn-primary')
+			event.preventDefault();
+			var tab_id = jQuery(this).attr('id');
+			jQuery('.tab-contents').slideUp();
+			jQuery('#tab'+tab_id).slideDown(200);
+		});
+//		});
+	});
+</script>
+
+</body></html>
