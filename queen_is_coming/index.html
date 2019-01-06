@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Coming Soon 2</title>
+	<title>The queen is coming</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -80,8 +80,30 @@
 	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script>
+
+	function DateDiff(b, e)
+{
+    let
+        endYear = e.getFullYear(),
+        endMonth = e.getMonth(),
+        years = endYear - b.getFullYear(),
+        months = endMonth - b.getMonth(),
+        days = e.getDate() - b.getDate();
+    if (months < 0)
+    {
+        years--;
+        months += 12;
+    }
+    if (days < 0)
+    {
+        months--;
+        days += new Date(endYear, endMonth, 0).getDate();
+    }
+    return [years, months, days];
+}
 		var date_now = new Date();
-		var date_future = new Date("2019-01-08 12:30:00");
+		var date_future = new Date("2019-01-08T12:30:00.000+00:00");
+
 		// get total seconds between the times
 		var delta = Math.abs(date_future - date_now) / 1000;
 
